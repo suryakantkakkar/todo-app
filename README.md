@@ -5,7 +5,7 @@
 
 In the project directory, you can run:
 
-## First step is to clone the repository using commans-:
+## First step is to clone the repository using command-:
 `git clone https://github.com/suryakantkakkar/todo-app`
 
 ## To install the required modules
