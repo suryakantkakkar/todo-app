@@ -21,4 +21,5 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ## Screenshots
-![Screenshot (171)](https://github.com/suryakantkakkar/todo-app/assets/55491342/539bf8c8-8ac6-4d7c-89fe-cbb4c3e78239)
+
+![Screenshot (172)](https://github.com/suryakantkakkar/todo-app/assets/55491342/f2350f36-cce2-407e-a23d-d578dfbf8717)
