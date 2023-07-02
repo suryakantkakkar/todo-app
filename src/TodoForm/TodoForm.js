@@ -1,5 +1,6 @@
 import React, {useState,useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import config from '../config/config.local';
 import backgroundImage from './background.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
@@ -23,7 +24,7 @@ function TodoForm() {
 
   const fetchTodoList = async () => {
     try {
-      const response = await fetch(`http://localhost:80/api/todos`); 
+      const response = await fetch(`${config.apiUrl}`); 
       const data = await response.json();
       setToDoList(data);
        // Find the largest taskid in the data array
@@ -48,7 +49,7 @@ function TodoForm() {
         setLargestTaskId(num);
         const newEntry = { taskid: num, title: newTask, status: 'Progress' };
   
-        const response = await axios.post(`http://localhost:80/api/todos`, newEntry);
+        const response = await axios.post(`${config.apiUrl}`, newEntry);
   
         if (response.status === 201) {
           const data = response.data;
@@ -67,7 +68,7 @@ function TodoForm() {
   // Delete task 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:80/api/todos/${id}`);
+      await axios.delete(`${config.apiUrl}/${id}`);
       const newTasks = toDoList.filter((task) => task.taskid !== id);
       setToDoList(newTasks);
     } catch (error) {
@@ -91,7 +92,7 @@ function TodoForm() {
       const updatedTask = newTasks.find((task) => task.taskid === id);
   
       // Make the PUT request to update the task
-      const response = await axios.put(`http://localhost:80/api/todos/${id}`, updatedTask);
+      const response = await axios.put(`${config.apiUrl}/${id}`, updatedTask);
   
       if (response.status !== 200) {
         console.log('Failed to update task:', response.status);
@@ -131,7 +132,7 @@ function TodoForm() {
         setUpdateData('');
   
         // Call the API endpoint to update the task in the MongoDB database
-        const response = await axios.put(`http://localhost:80/api/todos/${updateData.taskid}`, updateData);
+        const response = await axios.put(`${config.apiUrl}/${updateData.taskid}`, updateData);
   
         console.log('Task updated successfully:', response.data);
       } catch (error) {
