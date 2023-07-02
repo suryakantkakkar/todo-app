@@ -179,7 +179,7 @@ function TodoForm() {
         <>
           <div className="row">
             <div className="col">
-              <input value={newTask} onChange={getNewTask} className="form-control form-control-lg" />
+              <input placeholder='Enter New Task here' value={newTask} onChange={getNewTask} className="form-control form-control-lg" />
             </div>
             <div className="col-auto">
               <button className="btn btn-lg btn-success" onClick={addTask}>Add Task</button>
