@@ -21,10 +21,10 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 ## Features
 
-To Add new Task- To add task Enter the new task and click on add task
-To mark task as completed - Click on the checked circle and it will turn to green denoting the completed task.
-To edit task- Click on black pen icon to edit and click on update once done.
-To delete the task- Click on the red trash icon to delete the specific task.
+To Add new Task- To add task Enter the new task and click on add task.\
+To mark task as completed - Click on the checked circle and it will turn to green denoting the completed task.\
+To edit task- Click on black pen icon to edit and click on update once done.\
+To delete the task- Click on the red trash icon to delete the specific task.\
 
 ## Screenshots
 
