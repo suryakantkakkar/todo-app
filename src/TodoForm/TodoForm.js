@@ -113,7 +113,7 @@ function TodoForm() {
     let newEntry = {
       taskid: updateData.taskid,
       title: e.target.value,
-      status : updateData.status === 'Completed' ? 'Progress' : 'Completed',
+      status : updateData.status,
       //status: updateData.status ? true : false
     }
     setUpdateData(newEntry);
