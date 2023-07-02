@@ -6,10 +6,10 @@
 In the project directory, you can run:
 
 ## First step is to clone the repository using commans-:
-git clone https://github.com/suryakantkakkar/todo-app
+`git clone https://github.com/suryakantkakkar/todo-app`
 
 ## To install the required modules
-npm install
+`npm install`
 
 ## To run the project run command
 `npm start`
